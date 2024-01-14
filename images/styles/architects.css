@@ -93,12 +93,38 @@ main {
   color: #ff900e;
   font-weight: 700;
 }
+/* feature section styles */
+.features {
+  margin-top: 130px;
+  display: flex;
+  gap: 100px;
+}
+.features .section-title {
+  border-left: 5px solid #ff900e;
+  padding-left: 20px;
+}
 
+.feature-content .card {
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  padding: 30px;
+  margin-bottom: 20px;
+}
+.ten-years-badge {
+  border-radius: 8px;
+  background: #ff900e;
+  color: #FFF;
+  width: 342px;
+  padding: 40px;
+}
+.ten-years-badge h2{
+    font-size: 4rem;
+}
 /* facts section */
-.facts-card-container{
-    display: flex;
-    justify-content: space-around;
-    
+.facts-card-container {
+  display: flex;
+  justify-content: space-around;
 }
 .facts-card-container .card {
   border-radius: 8px;
@@ -107,39 +133,34 @@ main {
   text-align: center;
   font-size: 2.8rem;
   padding: 30px;
-
-  
-  
 }
-.facts-card-container .card-title{
-    font-weight: 600;
-    font-size: 1.25rem;
-    margin-top: 5px;
-    /* justify-content: center;
+.facts-card-container .card-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 5px;
+  /* justify-content: center;
     text-align: center; */
-
 }
-.facts-card-container .card-stats{
-    font-size: 2.8rem;
-    color: #424242;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.facts-card-container .card-stats {
+  font-size: 2.8rem;
+  color: #424242;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 /* sponsors styles */
-.sponsors{
-    text-align: center;
+.sponsors {
+  text-align: center;
 }
-.sponsors-img-container{
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: centers;
-    gap: 20px;
+.sponsors-img-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: centers;
+  gap: 20px;
 }
 
-.sponsors-img-container img{
-    width: 165px;
-
+.sponsors-img-container img {
+  width: 165px;
 }
 
 /* responsive media queries */
@@ -149,18 +170,20 @@ main {
     padding: 50px;
   }
   nav,
-  .teams-container,.facts-card-container,.sponsors-img-container
-   {
+  .teams-container,
+  .facts-card-container,
+  .sponsors-img-container {
     flex-direction: column;
   }
   .teams-img-container {
     grid-template-columns: 1fr;
   }
-  .teams-content, .facts-card-container {
+  .teams-content,
+  .facts-card-container {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .facts-card-container{
+  .facts-card-container {
     gap: 20px;
   }
 }
