@@ -14,10 +14,10 @@
   cursor: pointer;
   border: 0;
 }
-.section-title{
-    font-size: 2.8rem;
-    font-weight: 700;
-    color: #131313;
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #131313;
 }
 
 /* header styles */
@@ -30,7 +30,6 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-
 
 nav > ul {
   display: flex;
@@ -88,7 +87,6 @@ main {
   font-size: 2.8rem;
 }
 .teams-title .quick-list {
-  
   font-weight: 500;
 }
 .teams-title .text-features {
@@ -96,28 +94,60 @@ main {
   font-weight: 700;
 }
 
+/* facts section */
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.facts-card-container .card {
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+  /* padding: 50px 50px 50px 50px; */
+  text-align: center;
+  font-size: 2.8rem;
+  padding: 30px;
+
+  
+  
+}
+.facts-card-container .card-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 5px;
+
+}
+.facts-card-container .card-stats{
+    font-size: 2.8rem;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 /* responsive media queries */
 /* mobile devices */
 @media screen and (max-width: 576px) {
-    header {
-      padding: 50px;
-    }
-    nav, 
-    .teams-container 
-    {
-      flex-direction: column;
-    }
-    .teams-img-container{
-        grid-template-columns: 1fr;
-    }
-    .teams-content {
-        padding-left: 20px;
-        padding-right: 20px;
+  header {
+    padding: 50px;
   }
-    }
-  /* table or medium devices */
-  @media screen and (min-width: 567px) and (max-width: 960px) {
-    nav, .teams-container {
-      flex-direction: column;
-    }
+  nav,
+  .teams-container {
+    flex-direction: column;
   }
+  .teams-img-container {
+    grid-template-columns: 1fr;
+  }
+  .teams-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+/* table or medium devices */
+@media screen and (min-width: 567px) and (max-width: 960px) {
+  nav,
+  .teams-container {
+    flex-direction: column;
+  }
+}
+/* .card{
+    display: flex;
+  } */
